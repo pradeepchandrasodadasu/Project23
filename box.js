@@ -10,7 +10,6 @@ class Box{
       this.body = Bodies.rectangle(x,y,w,h,options);
       this.width = w;
       this.height = h;
-      this.body.debug = true;
       World.add(world,this.body);
     }
 
@@ -18,6 +17,7 @@ class Box{
 
       var pos = this.body.position;
       rectMode(CENTER);
+      fill("red");
       rect(pos.x,pos.y,this.width,this.height);
   
   
