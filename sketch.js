@@ -56,6 +56,7 @@ function draw() {
 
   Engine.update(engine);
 
+  groundSprite.x = ground.position.x;
   
   packageSprite.x = packageBody.position.x; 
   packageSprite.y = packageBody.position.y; 
